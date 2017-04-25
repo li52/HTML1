@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #box {
+            width: 200px;
+            height: 200px;
+            background: red;
+            opacity: 0.2;
+            border: 1px solid #ccc;
+            margin: 150px auto;
+            border-radius: 260px;
+            /*-webkit-transition: width 1s,height 1s,background 1s;opacity:1s;border: 1s;*/
+
+            -webkit-transform:rotate(0deg);
+            /*-webkit-transform:translateX(0px);*/
+            -webkit-transform: skew(0deg);
+            -webkit-transform: scale(1);
+            -webkit-transition: all 1s;
+            /*↑*/
+            /*不可以定义在事件上面*/
+
+        }
+        /*事件↓*/
+        #box:hover{
+            width: 500px;
+            height: 500px;
+            background: blue;
+            opacity: 1;
+            border: 10px solid red;
+            /*margin: 20px auto;
+            border-radius: 250px; 自己做的注释*/
+            -webkit-transform:rotate(300deg);
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="box"><img src="" alt=""></div>
+</body>
+</html>

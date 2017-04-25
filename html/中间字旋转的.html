@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #box {
+            width: 200px;
+            height: 200px;
+            background: red;
+            border-radius: 20px;
+            margin: 80px auto;
+            /*rotate-转动↓*/
+            -webkit-transform: rotate(45deg);
+            /*动画不要添加事件里面 添加主体里面下  all 代表所有↓*/
+            -webkit-transition: all 1s;
+        }
+        #box p {
+            font-size: 140px;
+            line-height: 200px;
+            text-align: center;
+            /*rotate-转动↓*/
+            -webkit-transform: rotate(135deg);
+            /*动画不要添加事件里面 添加主体里面下  all 代表所有↓↓*/
+            -webkit-transition: all 1s;
+        }
+        /*过程-划过之后↓*/
+        #box:hover {
+            /*rotate-转动↓*/
+            -webkit-transform: rotate(360deg);
+        }
+        /*过程-划过之后下↓*/
+        #box p:hover {
+            /*rotate-转动↓*/
+            -webkit-transform: rotate(900deg);
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <p>福</p>
+</div>
+</body>
+</html>
